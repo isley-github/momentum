@@ -7,6 +7,6 @@ function getClock() {
   const seconds = String(date.getSeconds()).padStart(2, "0");
   clock.innerText = `${hours}:${minutes}:${seconds}`;
 }
-// test
+
 getClock();
-setInterval(getClock, 1000);
+setInterval(getClock, 1000); // 실시간 시간 호출 function, 1000(1초마다 반복)
